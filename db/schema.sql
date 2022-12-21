@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS titledog_db;
+
+CREATE DATABASE titledog_db;
