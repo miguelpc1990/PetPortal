@@ -34,6 +34,12 @@ User.init(
             validate: {
                 len: [8],
             },
-        }
+        },
+    },
+    {
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        modelName: 'users',
     }
 )

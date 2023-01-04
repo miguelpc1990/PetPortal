@@ -20,7 +20,7 @@ Owner.init(
             allowNull: false,
         },
         dob: {
-            type: DataTypes.DATEONLY,
+            type: DataTypes.STRING,
             allowNull: false,
         },
         dogs: {
