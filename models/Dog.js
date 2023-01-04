@@ -39,5 +39,11 @@ Dog.init(
             type: DataTypes.STRING,
             allowNull: true,
         }
+    },
+    {
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        modelName: 'dogs',
     }
 )

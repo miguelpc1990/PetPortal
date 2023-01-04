@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Fido",
+        "age": 2,
+        "fixed": true,
+        "shared": true,
+        "medication": false,
+        "diet": "Hill's",
+        "notes": "Very gassy, no playtime for one hour after eating."
+    },
+    {
+        "name": "Cujo",
+        "age": 6,
+        "fixed": false,
+        "shared": false,
+        "medication": true,
+        "diet": "Purina",
+        "notes": "Needs to take prednisone, 10mg, with food daily."
+    },
+    {
+        "name": "Mutt",
+        "age": 4,
+        "fixed": true,
+        "shared": true,
+        "medication": false,
+        "diet": "Science Diet",
+        "notes": "Enjoys his blanket very much - make sure he has it at all times."
+    },
+    {
+        "name": "Lady",
+        "age": 1,
+        "fixed": true,
+        "shared": false,
+        "medication": false,
+        "diet": "Wellness CORE",
+        "notes": "Very shy and will bite when stressed. Approach with caution."
+    },
+    {
+        "name": "Tramp",
+        "age": 5,
+        "fixed": true,
+        "shared": true,
+        "medication": false,
+        "diet": "Royal Canin Healthy Skin",
+        "notes": "Wipe paws before entering kennel after playtime as he is prone to bacterial infections on his paws."
+    },
+    {
+        "name": "Clifford",
+        "age": 9,
+        "fixed": true,
+        "shared": false,
+        "medication": false,
+        "diet": "The Farmer's Dog Wet",
+        "notes": "Very large and vey excitable - will need lots of one on one playtime."
+    },
+    {
+        "name": "Snoopy",
+        "age": 6,
+        "fixed": false,
+        "shared": false,
+        "medication": false,
+        "diet": "Hill's Blue Bag",
+        "notes": "Do not be alarmed by lethargic behavior - she sleeps often."
+    }
+]

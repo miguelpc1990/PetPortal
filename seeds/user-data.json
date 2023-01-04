@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Terri",
+        "email": "terri@titledog.com",
+        "password": "password"
+    },
+    {
+        "name": "Johnathan",
+        "email": "johnathan@titledog.com",
+        "password": "password"
+    },
+    {
+        "name": "Courtney",
+        "email": "courtney@titledog.com",
+        "password": "password"
+    },
+    {
+        "name": "Robert",
+        "email": "robert@titledog.com",
+        "password": "password"
+    }
+]
