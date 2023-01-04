@@ -1,6 +1,27 @@
 [
     {
         "first_name": "Andrew",
-        "last_name": "Murray"
+        "last_name": "Murray",
+        "dob": "01/05/1967"
+    },
+    {
+        "first_name": "Joel",
+        "last_name": "Hudson",
+        "dob": "10/20/1978"
+    },
+    {
+        "first_name": "Gracie",
+        "last_name": "Fernandez",
+        "dob": "06/03/1989"
+    },
+    {
+        "first_name": "Lindwood",
+        "last_name": "Maynard",
+        "dob": "05/14/1999"
+    },
+    {
+        "first_name": "Bradford",
+        "last_name": "Love",
+        "dob": "07/18/1994"
     }
 ]

@@ -14,6 +14,21 @@ Kennel.init(
         isTaken: {
             type: DataTypes.BOOLEAN,
             allowNull: false,
+        },
+        dog_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'dog',
+                key: 'id',
+            }
         }
+    },
+    {
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        modelName: 'kennel'
     }
-)
+);
+
+module.exports = Kennel;

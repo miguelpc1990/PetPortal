@@ -30,5 +30,14 @@ Owner.init(
                 key: 'id',
             },
         }
+    },
+    {
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'owner',
     }
-)
+);
+
+module.exports = Owner;
