@@ -45,5 +45,13 @@ Dog.init(
         timestamps: false,
         freezeTableName: true,
         modelName: 'dogs',
+    },
+    {
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        modelName: 'dog',
     }
-)
+);
+
+module.exports = Dog;
