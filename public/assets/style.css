@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.wrapper {
+    width: 770px;
+    background: white;
+    border-radius: 20px;
+}
+
+.wrapper header {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+
+body {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: #FFFCFF;
+    background-image: url("IMG_4167.jpg");
+    background-size: 100%;
+}
+
+button {
+    width: 120px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px 0px 2px grey;
+}
+
+#header {
+    padding: 10px;
+    color: darkblue;
+    font-size: 50px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+#calendar {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#weekdays {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    color: darkblue;
+}
+
+#weekdays div {
+    width: 100px;
+    padding: 10px;
+}
+
+.day {
+    width: 100px;
+    padding: 10px;
+    height: 100px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 5px;
+    box-shadow: 0px 0px 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.day:hover {
+    background-color: #E8FAED;
+}
+
+.day+#currentDay {
+    background-color: #e8f4fa;
+}
+
+.event {
+    font-size: 10px;
+    padding: 3px;
+    background-color: #58BAE4;
+    color: white;
+    border-radius: 5px;
+    max-height: 55px;
+    overflow: hidden;
+}
+
+#newEventForm,
+#deleteEventForm {
+    position: absolute;
+    display: none;
+    z-index: 2;
+    padding: 25px;
+    background-color: #E8F4FA;
+    box-shadow: 0px 0px 1px black;
+    border-radius: 5px;
+    width: 350px;
+    top: 100px;
+    font-family: sans-serif;
+}
+
+#eventTitleInput {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 0px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 1px black;
+}
+
+#eventTitleInput.error {
+    border: 2px solid red;
+}
+
+#header button {
+    background-color: darkblue;
+}
+
+#cancelButton,
+#deleteButton {
+    background-color: salmon;
+    width: 75px;
+}
+
+#saveButton,
+#closeButton {
+    background-color: lightskyblue;
+    width: 75px;
+}
+
+#newButton {
+    background-color: green;
+    width: 75px;
+}
+
+#eventText {
+    font-size: 15px;
+}
+
+#FormBackDrop {
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.padding {
+    cursor: default !important;
+    background-color: #FFFCFF !important;
+    box-shadow: none !important;
+}
