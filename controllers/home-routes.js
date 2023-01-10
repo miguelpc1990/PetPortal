@@ -11,6 +11,14 @@ router.get('/', (req, res) => {
     res.render('logins');
   });
 
+router.get('/schedule', (req, res) => {
+    res.render('schedule');
+});
+
+router.get('/dogs', (req, res) => {
+    res.render('dogs');
+});
+
 // login post route
 router.post('/', async (req, res) => {
     try {
