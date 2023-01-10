@@ -1,17 +1,20 @@
-body {
+:root {
     --color-primary: #009579;
     --color-primary-dark: #007F67;
     --color-secondary: #252C6A;
     --color-error: #CC3333;
     --color-success: #4BB544;
     --border-radius: 4px;
+}
+
+body {
     margin: 0;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    background: url(./login-background.jpg);
+    /* background: url(./login-background.jpg); */
     background-size: cover;
 }
 .container {
