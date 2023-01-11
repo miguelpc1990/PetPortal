@@ -7,17 +7,17 @@ const deleteEventForm = document.getElementById('deleteEventForm');
 const backDrop = document.getElementById('FormBackDrop');
 const eventTitleInput = document.getElementById('eventTitleInput');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-function renderCalendar() {
+function renderCalendar() { //function for creating calendar
     const date = new Date();
     if (start !== 0) {
         date.setMonth(new Date().getMonth() + start);
     }
-    const month = date.getMonth();
+    const month = date.getMonth(); //set month, day and year
     const day = date.getDate();
     const year = date.getFullYear();
-    const firstDayOfMonth = new Date(year, month, 1);
-    const daysInMonth = new Date(year, month + 1, 0).getDate();
-    const dateString = firstDayOfMonth.toLocaleDateString('en-us', {
+    const firstDayOfMonth = new Date(year, month, 1); //saves first day of the month
+    const daysInMonth = new Date(year, month + 1, 0).getDate(); //saves the last date of the month
+    const dateString = firstDayOfMonth.toLocaleDateString('en-us', { 
         weekday: 'long',
         year: 'numeric',
         month: 'numeric',
@@ -50,7 +50,7 @@ function renderCalendar() {
         calendar.appendChild(daySquare);
     }
 }
-function openForm(date) {
+function openForm(date) { //opens bubble on calendar date click
     click = date;
     const eventForDay = events.find(e => e.date === click);
     if (eventForDay) {
@@ -61,7 +61,7 @@ function openForm(date) {
     }
     backDrop.style.display = 'block';
 }
-function closeForm() {
+function closeForm() { //close bubble
     eventTitleInput.classList.remove('error');
     newEventForm.style.display = 'none';
     deleteEventForm.style.display = 'none';
@@ -70,7 +70,7 @@ function closeForm() {
     click = null;
     renderCalendar();
 }
-function saveEvent() {
+function saveEvent() { //saves the reservation to the calendar
     if (eventTitleInput.value) {
         eventTitleInput.classList.remove('error');
         events.push({
@@ -83,12 +83,12 @@ function saveEvent() {
         eventTitleInput.classList.add('error');
     }
 }
-function deleteEvent() {
+function deleteEvent() { //removes the reservation from the calendar
     events = events.filter(e => e.date !== click);
     localStorage.setItem('events', JSON.stringify(events));
     closeForm();
 }
-function buttons() {
+function buttons() { //all button functionality here, next/prev month, save, cancel, delete, close and new.
     document.getElementById('nextMonth').addEventListener('click', () => {
         start++;
         renderCalendar();
