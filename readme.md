@@ -35,14 +35,23 @@ Project #2 challenged our group with a website that follows the following accept
 
 ## Usage
 ![Login page](./public/assets/Login-page.png)
+
 To use the product log into the main page
+
 ![Calendar page](./public/assets/calendar-page.png)
+
 You are greeting with the calendar landing page
+
 ![Res popup](./public/assets/popup.png)
+
 You click the day to bring up reservation popup
+
 ![Show res](./public/assets/show-res.png)
+
 Shows reservation on calendar
+
 ![Res removal](./public/assets/res-removal.png)
+
 Click reservation day to remove
 
 ## Credits
